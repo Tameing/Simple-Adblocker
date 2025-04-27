@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "||googlesyndication.com/pagead/",
+            "resourceTypes": ["script", "image", "xmlhttprequest", "sub_frame"]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "||doubleclick.net/pagead/",
+            "resourceTypes": ["script", "image", "xmlhttprequest", "sub_frame"]
+        }
+    },
+    {
+        "id": 3,
+        "priority": 2,
+        "action": { "type": "allow" },
+        "condition": {
+            "urlFilter": "||youtube.com/*",
+            "resourceTypes": ["main_frame", "sub_frame", "stylesheet", "script", "image", "font", "object", "xmlhttprequest", "ping", "csp_report", "media", "websocket", "other"]
+        }
+    },
+    {
+        "id": 4,
+        "priority": 2,
+        "action": { "type": "allow" },
+        "condition": {
+            "urlFilter": "||ytimg.com/*",
+            "resourceTypes": ["main_frame", "sub_frame", "stylesheet", "script", "image", "font", "object", "xmlhttprequest"]
+        }
+    },
+    {
+        "id": 5,
+        "priority": 2,
+        "action": { "type": "allow" },
+        "condition": {
+            "urlFilter": "||yt3.ggpht.com/*",
+            "resourceTypes": ["image", "script"]
+        }
+    },
+    {
+        "id": 6,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "||adnxs.com^",
+            "resourceTypes": ["script", "image", "xmlhttprequest", "sub_frame"]
+        }
+    },
+    {
+        "id": 7,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "||amazon-adsystem.com^",
+            "resourceTypes": ["script", "image", "xmlhttprequest", "sub_frame"]
+        }
+    },
+    {
+        "id": 8,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "||analytics.google.com^",
+            "resourceTypes": ["script", "image", "xmlhttprequest", "sub_frame"]
+        }
+    }
+]

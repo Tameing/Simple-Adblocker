@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Enhanced Ad Blocker",
+    "version": "1.0",
+    "description": "A comprehensive ad blocker extension",
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback",
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["adblocker.js"],
+            "run_at": "document_start",
+            "all_frames": true
+        }
+    ],
+    "declarative_net_request": {
+        "rule_resources": [{
+            "id": "ruleset_1",
+            "enabled": true,
+            "path": "rules.json"
+        }]
+    }
+}
