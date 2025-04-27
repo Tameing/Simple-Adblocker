@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Enhanced Ad Blocker",
+    "name": "Simple Ad Blocker",
     "version": "1.0",
-    "description": "A comprehensive ad blocker extension",
+    "description": "An example Chrome extension that blocks ads.",
     "permissions": [
         "declarativeNetRequest",
         "declarativeNetRequestFeedback",
